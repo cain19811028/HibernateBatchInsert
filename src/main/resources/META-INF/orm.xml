@@ -12,6 +12,8 @@
             <basic name="sex"/>
             <basic name="leadership"/>
             <basic name="power"/>
+            <basic name="knowledge"/>
+            <basic name="politics"/>
             <basic name="modifyDate"/>
         </attributes>
     </entity>

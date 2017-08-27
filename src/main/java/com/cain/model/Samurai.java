@@ -25,16 +25,24 @@ public class Samurai {
     private Long power;
 	
 	@Column
+    private Long knowledge;
+	
+	@Column
+    private Long politics;
+	
+	@Column
     private Date modifyDate;
     
     public Samurai() {};
     
-    public Samurai(Integer id, String name, String sex, Long leadership, Long power, Date modifyDate) {
+    public Samurai(Integer id, String name, String sex, Long leadership, Long power, Long knowledge, Long politics, Date modifyDate) {
         this.id = id;
         this.name = name;
         this.sex = sex;
         this.leadership = leadership;
         this.power = power;
+        this.knowledge = knowledge;
+        this.politics = politics;
         this.modifyDate = modifyDate;
     }
     
@@ -68,6 +76,22 @@ public class Samurai {
 
     public void setLeadership(Long leadership) {
         this.leadership = leadership;
+    }
+    
+    public Long getKnowledge() {
+        return knowledge;
+    }
+
+    public void setKnowledge(Long knowledge) {
+        this.knowledge = knowledge;
+    }
+    
+    public Long getPolitics() {
+        return politics;
+    }
+
+    public void setPolitics(Long politics) {
+        this.politics = politics;
     }
     
     public Date getModifyDate() {
