@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+                                     http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd" version="2.1">
+
+    <!-- entity mapping -->
+    <entity class="com.cain.model.Samurai" name="creation">
+        <attributes>
+            <id name="id"/>
+            <basic name="name"/>
+            <basic name="sex"/>
+            <basic name="leadership"/>
+            <basic name="power"/>
+            <basic name="modifyDate"/>
+        </attributes>
+    </entity>
+    
+    <entity class="com.cain.model.Person" name="people">
+        <attributes>
+            <id name="id"/>
+            <basic name="name"/>
+            <basic name="sex"/>
+            <basic name="modifyDate"/>
+        </attributes>
+    </entity>
+
+</entity-mappings>
